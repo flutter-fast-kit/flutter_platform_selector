@@ -1,0 +1,12 @@
+name: flutter_platform_selector
+description: platform selector.
+version: 1.0.0
+homepage: https://github.com/flutter-fast-kit/flutter_platform_selector
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
