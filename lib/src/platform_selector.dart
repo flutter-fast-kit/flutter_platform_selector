@@ -10,7 +10,8 @@ class PlatformSelector {
       T fuchsia,
       T web,
       T mobile,
-      T desktop}) {
+      T desktop,
+      T other}) {
     switch (Platform.operatingSystem) {
       case 'ios':
         return ios;
@@ -44,6 +45,10 @@ class PlatformSelector {
     if (!kIsWeb &&
         (Platform.isWindows || Platform.isLinux || Platform.isMacOS)) {
       return desktop;
+    }
+
+    if (other != null) {
+      return other;
     }
 
     throw Exception('not support platform!');
