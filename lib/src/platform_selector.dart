@@ -12,23 +12,23 @@ class PlatformSelector {
       T mobile,
       T desktop,
       T other}) {
-    switch (Platform.operatingSystem) {
-      case 'ios':
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.iOS:
         return ios;
         break;
-      case 'android':
+      case TargetPlatform.android:
         return android;
         break;
-      case 'linux':
+      case TargetPlatform.linux:
         return linux;
         break;
-      case 'macos':
+      case TargetPlatform.macOS:
         return macos;
         break;
-      case 'windows':
+      case TargetPlatform.windows:
         return windows;
         break;
-      case 'fuchsia':
+      case TargetPlatform.fuchsia:
         return fuchsia;
         break;
       default:
@@ -38,12 +38,11 @@ class PlatformSelector {
       return web;
     }
 
-    if (Platform.isAndroid || Platform.isIOS) {
+    if (PlatformUniversal.isMobile) {
       return mobile;
     }
 
-    if (!kIsWeb &&
-        (Platform.isWindows || Platform.isLinux || Platform.isMacOS)) {
+    if (PlatformUniversal.isDesktop) {
       return desktop;
     }
 
