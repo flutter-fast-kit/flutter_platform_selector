@@ -1,6 +1,7 @@
 # flutter_platform_selector
 
 [![Pub](https://img.shields.io/pub/v/flutter_platform_selector.svg)](https://pub.dartlang.org/packages/flutter_platform_selector)
+[![Publish to Pub.dev](https://github.com/flutter-fast-kit/flutter_platform_selector/actions/workflows/publish.yml/badge.svg)](https://github.com/flutter-fast-kit/flutter_platform_selector/actions/workflows/publish.yml)
 [![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)]()
 [![Awesome Flutter](https://img.shields.io/badge/Platform-Android_iOS-blue.svg?longCache=true&style=flat-square)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
